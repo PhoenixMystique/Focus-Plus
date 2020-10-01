@@ -1,5 +1,5 @@
 # Focus-
-Focus+ is App to detox digital toxicity this app is purely made in java with the help of ANdroid Studio
+Focus+ is App to detox digital toxicity this app is purely made in java with the help of Android Studio
 Im using Java as backend language in android studio 
 using usage stats Manager in android to get info 
 use custom list to take and sort data
