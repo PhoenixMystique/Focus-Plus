@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="409dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/building" />
+
+    <ImageView
+        android:id="@+id/page"
+        android:layout_width="353dp"
+        android:layout_height="267dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375"
+        app:srcCompat="@drawable/page" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="123dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="225dp"
+        android:background="@drawable/login"
+        android:clickable="true"
+        android:longClickable="true"
+        android:onClick="login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="229dp"
+        android:layout_height="80dp"
+        android:background="@drawable/local"
+        app:columnCount="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:layout_constraintVertical_bias="0.313"
+        app:rowCount="2">
+
+        <TextView
+            android:layout_width="22dp"
+            android:layout_height="45dp"
+            android:alpha="0"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/facebook"
+            android:layout_width="42dp"
+            android:layout_height="45dp"
+            android:alpha="0"
+            android:onClick="Facebook"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/google"
+            android:layout_width="47dp"
+            android:layout_height="44dp"
+            android:alpha="0"
+            android:onClick="google"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/tweeter"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:alpha="0"
+            android:onClick="twitter"
+            android:text="textwha"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="23dp"
+            android:layout_height="45dp"
+            app:layout_column="5"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/linkedin"
+            android:layout_width="44dp"
+            android:layout_height="45dp"
+            android:onClick="Linkedin"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="118dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/signup"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="signup"
+        app:layout_constraintBottom_toTopOf="@+id/poweredby"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/poweredby"
+        android:layout_width="77dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/power"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <ImageView
+        android:id="@+id/logohash"
+        android:layout_width="38dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toEndOf="@+id/poweredby"
+        app:layout_constraintTop_toBottomOf="@+id/signup"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo2" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="299dp"
+        app:layout_constraintBottom_toTopOf="@+id/page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="254dp"
+        android:layout_height="49dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="@+id/page"
+        app:layout_constraintTop_toTopOf="@+id/page"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="257dp"
+        android:layout_height="43dp"
+        android:autoText="true"
+        android:ems="10"
+        android:hint="Password"
+        android:importantForAutofill="yes"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/page"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintVertical_bias="0.195" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="198dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/boy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

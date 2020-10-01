@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".DataActivity">
+
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/chipNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/navigation"
+        android:padding="5dp"
+        app:cnb_menuResource="@menu/menu_items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/List" />
+
+    <ListView
+        android:id="@+id/List"
+        android:layout_width="392dp"
+        android:layout_height="474dp"
+        android:background="@drawable/rounded_view"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/totalappuse"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="@+id/tt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <ImageView
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toTopOf="@+id/List"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.471"
+        app:srcCompat="@drawable/tt" />
+
+    <TextView
+        android:id="@+id/totalappuse"
+        android:layout_width="140dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aldrich"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/tt"
+        app:layout_constraintTop_toTopOf="@+id/tt"
+        app:layout_constraintVertical_bias="0.695" />
+</androidx.constraintlayout.widget.ConstraintLayout>
