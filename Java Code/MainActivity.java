@@ -64,22 +64,10 @@ if(stats.size()<1){
     }
 public void temprory(){
         temp.add("Aditya");
-        temp.add("hridesh");
-        temp.add("Ankit");
         temp.add("password");
         temp.add("pass");
-        temp.add("Shiny");
-        temp.add("jai");
-        temp.add("Anurag");
-        temp.add("Himanshi");
-        temp.add("deepak");
-        temp.add("lalu");
-        temp.add("Abhay");
-        temp.add("chetanya");
-        temp.add("gaiska");
         user.add("Hashhacker");
         user.add("Admin");
-        user.add("phoenix");
 
 
 }
