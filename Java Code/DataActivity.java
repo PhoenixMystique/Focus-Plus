@@ -104,23 +104,19 @@ public class DataActivity<stats> extends AppCompatActivity {
                         currentEvent.getEventType() == UsageEvents.Event.MOVE_TO_BACKGROUND) {
                     allEvents.add(currentEvent);
                     String key = currentEvent.getPackageName();
-// taking it into a collection to access by package name
                     if (map.get(key)==null) map.put(key,new AppUsageInfo(key));
                 }
             }
 
-//iterating through the arraylist
             for (int i=0;i<allEvents.size()-1;i++){
                 UsageEvents.Event E0=allEvents.get(i);
                 UsageEvents.Event E1=allEvents.get(i+1);
 
-//for launchCount of apps in time range
                 if (!E0.getPackageName().equals(E1.getPackageName()) && E1.getEventType()==1){
 // if true, E1 (launch event of an app) app launched
                     map.get(E1.getPackageName()).launchCount++;
                 }
 
-//for UsageTime of apps in time range
                 if (E0.getEventType()==1 && E1.getEventType()==2
                         && E0.getClassName().equals(E1.getClassName())){
                     long diff = E1.getTimeStamp()-E0.getTimeStamp();
