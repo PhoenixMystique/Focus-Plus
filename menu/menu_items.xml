@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  app:cnb_unselectedColor="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/installed"
+        android:icon="@drawable/icon1"
+        android:title="Installed Apps"
+        app:cnb_backgroundColor="#fff"
+        app:cnb_textColor="#fff" />
+
+    <item
+        android:id="@+id/system"
+        android:icon="@drawable/icon2"
+        android:onClick="System_Apps"
+        android:title="System Apps"
+        app:cnb_backgroundColor="#fff"
+        app:cnb_textColor="#fff" />
+    <item
+        android:id="@+id/Alarm"
+        android:icon="@drawable/icon3"
+        android:title="Foucus+ Alarms"
+        app:cnb_backgroundColor="#fff"
+        app:cnb_textColor="#fff" />
+
+    <item
+        android:id="@+id/alert"
+        android:icon="@drawable/alert"
+        android:title="High Uses"
+        app:cnb_backgroundColor="#fff"
+        app:cnb_textColor="#fff" />
+</menu>
