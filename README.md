@@ -2,7 +2,7 @@
 Focus+ is App to detox digital toxicity this app is purely made in java with the help of Android Studio
 1. Use Admin and Password As login
 ![](Preview%20ScrenShots/1st.jpg)
-
+Option To block the App According to Time Limit
 ![](Preview%20ScrenShots/2nd.jpg)
 Extra Informaton
 ![](Preview%20ScrenShots/pic3.jpg)
