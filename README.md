@@ -5,7 +5,9 @@ Focus+ is App to detox digital toxicity this app is purely made in java with the
 Option To block the App According to Time Limit
 ![](Preview%20ScrenShots/2nd.jpg)
 Extra Informaton
-![](Preview%20ScrenShots/pic3.jpg)
+![](Preview%20ScrenShots/pic3.jpg)]
+Live Fitness Monitoring
+![last](https://user-images.githubusercontent.com/67161169/131551571-f42f07b3-b0f1-4776-be94-984935ba91e7.jpg)
 so for this 
 Im using Java as backend language in android studio 
 using usage stats Manager in android to get info 
